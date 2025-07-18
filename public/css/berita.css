@@ -1,0 +1,31 @@
+.custom-berita {
+    text-align: justify;
+}
+
+.card,
+.budget-card {
+    background: linear-gradient(135deg, #001f3f, #004080);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.custom-card {
+    width: 250px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+    .custom-sidebar {
+        margin-top: 180px !important;
+        flex-shrink: 2;
+        width: 25%;
+    }
+
+    .custom-berita {
+        width: 75%;
+    }
+}

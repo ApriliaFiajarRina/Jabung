@@ -1,0 +1,202 @@
+.background-gunung {
+    background-image: url('../img/back-surat.jpg');
+    background-position: 50% 30%;
+    position: relative;
+    background-size: cover;
+}
+
+.background-gunung::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 36, 76, 0.2), rgba(0, 61, 129, 0.5));
+    pointer-events: none;
+}
+
+.pdf-container {
+    background: linear-gradient(#003d81, #000d1b);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+.pdf-container img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.pdf-container p {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.swiper {
+    max-width: 900px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: initial !important;
+    margin-top: 10px;
+}
+
+.more-info-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #001f3f, #004080); /* Navy blue gradient background */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+.alert-custom {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.note {
+    color: red;
+    font-size: 14px;
+}
+
+textarea {
+    width: 50%;
+    height: 5rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px dashed black;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    border-bottom: 1px dashed black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 50%;
+}
+
+input[type="radio"] {
+    /* cursor: pointer; */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+/* radio custom */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.radio-container .checkmark::after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* end radio custom */
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mb-3 {
+    /* border: 3px black solid; */
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    display: grid;
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        width: 100%;
+    }
+}
+
+/* .form-control {
+    width: 20rem;
+} */
+
+/* .form {
+    margin: 0 auto;
+} */
+

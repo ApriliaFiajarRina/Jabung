@@ -1,0 +1,238 @@
+body {
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.background-gunung {
+    background-image: url('../img/back-angaran.jpg');
+    background-position: 50% 30%;
+    position: relative;
+    background-size: cover;
+}
+
+.background-gunung::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 36, 76, 0.2), rgba(0, 61, 129, 0.5));
+    pointer-events: none;
+}
+
+.breadcrumbs h2,
+.breadcrumbs h5 {
+    color: white;
+}
+
+.tabel-anggaran {
+    background-image: linear-gradient(#003d81, #000d1b);
+    width: 30%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.tabel-anggaran .title-tabel-anggaran {
+    background-color: #ffd600;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-tabel-anggaran {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+    .container-tabel-anggaran {
+        display: inline-table;
+        width: 100%;
+        margin: auto;
+    }
+
+    .tabel-anggaran {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.jumlah-pendapatan {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.jumlah-pendapatan h2 {
+    color: black;
+}
+
+.container-jumlah-pendapatan {
+    display: flex;
+    justify-content: center;
+}
+
+.tabel-jumlah-pendapatan {
+    background-image: linear-gradient(#003d81, #000d1b);
+    font-size: 40px;
+    color: white;
+    padding: 0px 50px 0px 50px;
+    border-radius: 10px;
+}
+
+@media (max-width: 476px) {
+    .tabel-jumlah-pendapatan {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .tabel-jumlah-pendapatan p {
+        margin: auto;
+    }
+}
+
+.container-belanja-desa {
+    background-color: #ededed;
+}
+
+.container-pendapatan-desa {
+    padding-top: 0 !important;
+}
+
+.tabel-belanja-desa {
+    background-image: linear-gradient(#003d81, #000d1b);
+    color: white;
+    font-size: 34px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-tabel-atas {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.container-tabel-bawah {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+@media (max-width: 476px) {
+    .container-tabel-atas {
+        display: inline-table;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .tabel-belanja-desa {
+        width: 100%;
+    }
+
+    .container-tabel-bawah {
+        display: inline-table;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.tabel-belanja-desa h5 {
+    background-color: #ffd600;
+    height: 22px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tabel-penerima-pembiayaan {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin: 41px;
+}
+
+.tabel-pembiayaan {
+    background-image: linear-gradient(#000d1b, #003d81);
+    height: 122px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+@media (max-width: 476px) {
+    .tabel-penerima-pembiayaan {
+        display: inline-table;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .tabel-pembiayaan {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.tabel-pembiayaan h5 {
+    background-color: #ffd600;
+    height: 43px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.pdf-container {
+    background: linear-gradient(#003d81, #000d1b);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+.pdf-container img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.pdf-container p {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.swiper {
+    max-width: 900px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: initial !important;
+    margin-top: 10px;
+}
+
+.btn-dropdown {
+    background-image: linear-gradient(#003d81, #000d1b);
+    text-align: center;
+    color: white;
+}
+
+.btn-dropdown:hover {
+    color: white;
+    opacity: 0.9;
+}
+.btn-dropdown:focus {
+    color: white;
+    opacity: 0.9;
+}

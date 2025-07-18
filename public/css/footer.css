@@ -1,0 +1,11 @@
+.custom-footer {
+  background: linear-gradient(#003d81, #000d1b);
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.custom-icon img {
+  width: 50px;
+}

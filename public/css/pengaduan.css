@@ -1,0 +1,47 @@
+body {
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.background-gunung {
+    background-image: url('../img/Gunung.png');
+    background-position: 50% 30%;
+    position: relative;
+    background-size: cover;
+}
+
+.background-gunung::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 36, 76, 0.2), rgba(0, 61, 129, 0.5));
+    pointer-events: none;
+}
+
+.more-info-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #001f3f, #004080); /* Navy blue gradient background */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+.alert-custom {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+}

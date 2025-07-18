@@ -1,0 +1,236 @@
+body {
+    font-family: 'Poppins';
+}
+
+.background-dawet {
+    background-image: url('../img/back-about.jpg');
+    background-position: 50% 30%;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.background-dawet::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 36, 76, 0.2), rgba(0, 61, 129, 0.5));
+    pointer-events: none;
+}
+
+.container h4 {
+    color: black;
+}
+
+.container p {
+    color: black;
+    font-weight: 500;
+}
+
+.container ol li {
+    color: black;
+    font-weight: 500;
+}
+
+.tombol-selengkapnya {
+    background-color: #ffd600;
+    width: 30%;
+    margin: 20px auto 0px;
+    padding: 4px;
+    border-radius: 50px;
+    min-width: 150px;
+}
+
+.tombol-selengkapnya a {
+    color: black;
+    font-weight: 500;
+}
+
+.kotak-wilayah h5 {
+    background-color: #ffd600;
+    font-weight: 500;
+}
+
+.kotak-wilayah ul li {
+    color: white;
+    list-style: none;
+}
+
+.section-demografi {
+    background-color: #ededed;
+}
+
+.kotak-wilayah .luas-wilayah h5 {
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px;
+}
+
+.section-demografi .kotak-wilayah .luas-wilayah {
+    background-image: linear-gradient(#000d1b, #003d81);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.kotak-wilayah .list-luas-wilayah {
+    display: flex;
+}
+
+.section-demografi .kotak-wilayah .orbitasi h5 {
+    margin: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.section-demografi .kotak-wilayah .orbitasi {
+    background-image: linear-gradient(#000d1b, #003d81);
+    border-radius: 10px;
+}
+
+.orbitasi .list-orbitasi {
+    display: flex;
+}
+
+.kotak-wilayah .batas-jumlah-wilayah {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.kotak-wilayah .batas-jumlah-wilayah .batas-dan-penduduk {
+    width: 50%;
+}
+
+.kotak-wilayah .batas-wilayah {
+    background-image: linear-gradient(#000d1b, #003d81);
+    border-radius: 10px;
+    position: relative;
+}
+
+.kotak-wilayah .batas-wilayah h5 {
+    margin: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.kotak-wilayah .batas-wilayah .list-batas-wilayah {
+    display: flex;
+}
+
+.kotak-wilayah .jumlah-penduduk {
+    background-image: linear-gradient(#000d1b, #003d81);
+    border-radius: 10px;
+}
+
+.kotak-wilayah .jumlah-penduduk h5 {
+    margin: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.kotak-wilayah .jumlah-penduduk .list-jumlah-penduduk {
+    display: flex;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-bagan-susunan {
+    display: flex;
+    gap: 29px;
+    scrollbar-color: #003d81 transparent;
+    overflow-x: scroll;
+}
+
+.swiper-anggota {
+    height: 92%;
+    min-width: 171px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.swiper-anggota img {
+    height: 221px;
+    min-width: 169px;
+}
+
+.swiper-anggota .jabatan-anggota {
+    color: #003d81;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.swiper-anggota .nama-anggota {
+    font-size: 0.8rem;
+    margin: 0px;
+    color: #003d81;
+}
+
+.swiper-anggota .nama-kades {
+    color: #003d81;
+    font-size: 28px;
+    margin: 0px;
+}
+
+.swiper-anggota .periode-kades {
+    color: #003d81;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.kepala-desa {
+    background-color: #ededed;
+}
+
+@media screen and (max-width: 480px) {
+    .kotak-wilayah .batas-jumlah-wilayah {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .batas-wilayah {
+        width: 100%;
+    }
+
+    .section-demografi .kotak-wilayah .luas-wilayah {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .kotak-wilayah .batas-jumlah-wilayah .batas-dan-penduduk {
+        width: 100%;
+    }
+
+    .swiper-anggota img {
+        max-width: 94px;
+    }
+
+    .swiper-bagan-susunan {
+        gap: 11px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .swiper-anggota {
+        height: 92%;
+        min-width: 241px;
+        border-radius: 10px 10px 0px 0px;
+        text-align: center;
+    }
+
+    .swiper-anggota img {
+        height: 334px;
+        min-width: 169px;
+    }
+
+    .swiper-anggota .jabatan-anggota {
+        font-size: 1.5rem;
+    }
+
+    .swiper-anggota .nama-anggota {
+        font-size: 1.2rem;
+    }
+}

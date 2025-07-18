@@ -1,0 +1,563 @@
+.hero .hero-logo {
+    width: 68px; /* Sesuaikan ukuran logo untuk tampilan mobile */
+    height: 67px;
+    margin-bottom: 10px; /* Jarak di bawah logo */
+}
+
+.background-index {
+    background-image: url('../img/back-home.jpg');
+    background-position: 50% 30%;
+    position: relative;
+    background-size: cover;
+}
+
+.background-index::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 36, 76, 0.2), rgba(0, 61, 129, 0.5));
+    pointer-events: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+.container {
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center container */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; /* Hapus margin bawah pada row */
+}
+
+.col-lg-8,
+.col-lg-4,
+.col-lg-12 {
+    padding: 15px;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.col-lg-8 {
+    width: 100%;
+}
+
+.col-lg-4 {
+    width: 100%;
+}
+
+.col-lg-12 {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.title-box {
+    flex: 1 1 100%;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .title-box {
+        flex: 2;
+        margin-right: 20px; /* Add space between boxes */
+        margin-bottom: 0;
+    }
+}
+
+.menu-box {
+    flex: 1 1 100%;
+    background: linear-gradient(135deg, #001f3f, #004080); /* Gradient background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+    .menu-box {
+        flex: 1;
+    }
+}
+
+.title-with-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center items */
+}
+
+@media (min-width: 992px) {
+    .title-with-image {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.title {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.title h1 {
+    font-size: 24px; /* Adjust size for better readability on mobile */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.title p {
+    font-size: 16px; /* Adjust font size */
+    color: #666;
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+@media (min-width: 992px) {
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .title p {
+        font-size: 18px;
+    }
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly dark background for menu items */
+}
+
+@media (min-width: 1200px) {
+    .menu-item {
+        font-size: 20px;
+    }
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #ffc107;
+    color: #001f3f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .button {
+        font-size: 18px;
+    }
+}
+
+.card-grid,
+.pdf-grid,
+.budget-grid,
+.map-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card,
+.budget-card {
+    background: linear-gradient(135deg, #001f3f, #004080);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .card,
+    .budget-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (min-width: 1200px) {
+    .card,
+    .budget-card {
+        flex: 1 1 calc(25% - 20px); /* Four cards per row on desktops */
+    }
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2,
+.budget-card p {
+    font-size: 16px; /* Adjusted for mobile */
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+    .card h2,
+    .budget-card p {
+        font-size: 22px;
+    }
+}
+
+.budget-card h3 {
+    font-size: 20px; /* Adjusted for mobile */
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    .budget-card h3 {
+        font-size: 26px;
+    }
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.gallery-grid img {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+@media (max-width: 480x) {
+    .gallery-grid img {
+        max-width: 120px;
+    }
+}
+
+.map-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-title-custom {
+    font-size: 24px; /* Adjusted for mobile */
+    color: #2c3e50;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .section-title-custom {
+        font-size: 36px;
+    }
+}
+
+.content {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content-inner {
+    background: linear-gradient(135deg, #001f3f, #004080); /* Blue gradient background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* New CSS for Transparansi Anggaran */
+
+.budget-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.budget-card {
+    background: linear-gradient(135deg, #001f3f, #004080); /* Navy blue gradient background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .budget-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (min-width: 1200px) {
+    .budget-card {
+        flex: 1 1 calc(30% - 20px); /* Three cards per row on desktops */
+    }
+}
+
+.budget-card p {
+    font-size: 16px; /* Adjusted for mobile */
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ffc107; /* Yellow background color */
+    border-radius: 5px;
+    color: #001f3f; /* Navy blue text color */
+}
+
+@media (min-width: 1200px) {
+    .budget-card p {
+        font-size: 20px;
+    }
+}
+
+.budget-card h3 {
+    font-size: 20px; /* Adjusted for mobile */
+    margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    .budget-card h3 {
+        font-size: 26px;
+    }
+}
+
+.more-info-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #001f3f, #004080); /* Navy blue gradient background */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pdf-grid {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap;
+    gap: 15px; /* Gap between cards */
+}
+
+.pdf-card {
+    background: linear-gradient(#003d81, #000d1b);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 45%; /* Ensure two cards per row */
+    max-width: 200px; /* Set a maximum width to control the card size */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.pdf-card img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.pdf-card h2 {
+    font-size: 12px; /* Smaller font size */
+    margin-top: 8px;
+    color: #ffffff;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 100px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+    .hero .hero-logo {
+        width: 50px; /* Smaller logo for mobile */
+        height: auto;
+        margin-bottom: 10px; /* Adjust spacing below the logo */
+    }
+
+    .hero h2 {
+        font-size: 24px; /* Slightly larger font size for readability */
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 16px; /* Adjust font size for better readability */
+        line-height: 1.4; /* Adjust line height for better spacing */
+        margin-bottom: 20px;
+    }
+
+    .btn-get-started {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 16px; /* Adjust font size for the button text */
+    }
+
+    /* Container and alignment adjustments */
+    .hero .info .container {
+        padding: 15px; /* Reduce padding for the container */
+    }
+
+    .hero .info .row {
+        margin: 0; /* Remove margin from the row */
+    }
+
+    .hero .col-lg-6 {
+        padding: 0; /* Remove padding from columns */
+    }
+
+    .hero .text-center {
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+.pdf-container {
+    background: linear-gradient(#003d81, #000d1b);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+.pdf-container img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.pdf-container p {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Poppins', 'sans-serif';
+}
